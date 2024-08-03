@@ -1,0 +1,209 @@
+
+
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+ 
+}
+
+
+
+.left-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: #000000;
+  font-size: 2.5vw;
+  font-family: "Oswald", sans-serif;
+}
+
+.left-login-image {
+  width: 35vw;
+}
+
+.right-login {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #ffffffc7;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.card-login > h1 {
+  color: #ff0000;
+  font-weight: 800;
+  font-size: 10px;
+  display: flex;
+margin-right: 120px;
+
+  
+}
+
+
+a {
+  font-size: 13px;
+}
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #ffffff;
+  color: #000000de;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid rgb(113, 112, 112);
+}
+
+.textfield > label {
+  color: #000000de;
+  margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+  color: #909191c9;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #ffffffdd;
+  background: #3605a8ec;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 950px){
+  .card-login{
+    width: 85%;
+  }
+
+  .card-login > h1 {
+    color: #ff0000;
+    font-weight: 800;
+    font-size: 10px;
+    display: flexbox;
+ 
+    
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .main-login{
+    flex-direction: column;
+  }
+
+  .card-login > h1 {
+    color: #ff0000;
+    font-weight: 800;
+    font-size: 10px;
+    display: flexbox;
+ 
+    
+  }
+
+ 
+  .left-login h1{
+    margin-top: 30px;
+    display: flex;
+    font-size: 35px;
+    color: red;
+   
+  }
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-login-image {
+    width: 30vh;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+}
+
+.login {
+  margin-top: 120px;
+}
+
+
+
+.ticker-container {
+  width: 100%; /* Full width of the parent */
+  overflow: hidden; /* Hide the overflow content */
+  background-color: #f1f1f1; /* Background color for the ticker */
+  border: 1px solid #ccc; /* Optional: border around the ticker */
+}
+
+.ticker-wrap {
+  display: flex;
+  animation: ticker 18s linear infinite; /* Animate the ticker */
+}
+
+.ticker-move {
+  display: flex;
+  min-width: 100%; /* Ensure it takes at least full width */
+  color: red;
+  
+}
+
+.ticker-move p {
+  white-space: nowrap; /* Prevent line breaks */
+  margin-right: 50px; /* Space between the texts */
+  font-size: 18px; /* Adjust text size as needed */
+
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
